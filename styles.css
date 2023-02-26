@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    padding: 100px 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: blue;
+}
+
+.col{
+   padding: 30px; 
+}
+
+.col-1{
+    background-color: white;
+}
+
+.col-1 h2{
+    color: hsl(179, 62%, 43%) ;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+
+}
+
+.col-1 h3{
+   color: hsl(71, 73%, 54%);
+   font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+
+.col-1 p{
+    color: hsl(218, 22%, 67%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+ }
+ 
+ .col-2{
+    background-color: hsl(179, 62%, 43%);
+ }
+
+ .col-2 h3{
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+     margin-bottom: 15px;
+ }
+
+ .col-2 p{
+    color: hsl(204, 43%, 93%);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 10px;
+ }
+
+ span{
+    font-size: 2.5rem;
+    font-weight: 700;
+ }
+
+.col-2 .button{
+    text-align: center;
+    width: 90%;
+    padding: 15px;
+    background-color: hsl(71, 73%, 54%);
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    font-weight: 700;
+    box-shadow: 0px 4px 10px 1px #00000033;
+    border-radius: 10px;
+
+} 
+ 
+.col-3{
+    background-color: #4abebd;
+}
+
+.col-3 h3{
+    color: white;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.col-3 p{
+    color: hsl(204, 43%, 93%);
+    line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 1440px) {
+    .col-1 {
+      width: 100%
+    }
+    .col-2{
+        width: 50%;
+    }
+    .col-3{
+        width: 50%;
+    }
+   .col-com{
+    display: flex;
+    flex-direction: row;
+    width: 610px;
+
+   }
+}
